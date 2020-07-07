@@ -1,10 +1,21 @@
 <!DOCTYPE html>
+<!-- ATALHOS UTEIS -->
+<!-- IDENTAR CÓDIGO SHIFT + ALT + F -->
+<!-- CRIAR COMENTARIO CTRL + K + C  -->
+<!-- DUPLICAR LINHA SHIFT + ALT + SETA (CIMA OU BAIXO) -->
+<!-- COLOCAR UM BLOCO DE CÓDIGO DENTRO DE UM DIV CTRL + I  -->
+
+<!-- MRDIDA REM PARA UTILIZAR NO MOBILE
+     para sabermos qual o tamanho do rem em px, basta dividirmos o tamanho em pixels por 16. -->
+
 <html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta name="description" content="Aprenda na prática a desenvolver um template moderno com propriedades avançadas do HTML5 e CSS3." />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="description"
+    content="Aprenda na prática a desenvolver um template moderno com propriedades avançadas do HTML5 e CSS3." />
   <title>Agency New - HTML e CSS Pro</title>
   <!-- FONT GOOGLE -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -24,24 +35,62 @@
 
 <body>
 
-  <h1>Curso HTML5 e CSS3 na Prática - HTML e CSS Pro</h1>
 
-  
-  <div class="owl-carousel">
-    <ul>
-      <li>
-        <a href="http://">Lonk 2</a>
-        <a href="http://">Lonk 3</a>
-        <a href="http://">Lonk 4</a>
-        <a href="http://">Lonk 5</a>
-      </li>
-    </ul>
-  </div>
+  <!-- start HEADER -->
+  <header class="row header">
+    <h1 class="font-zero">Curso HTML5 e CSS3 na Prática - HTML e CSS Pro</h1>
 
-  <script src='js/jquery.min.js'></script>
-  <script src='js/owl.carousel.min.js'></script>
-  <script src="js/script.js"></script>
+    <div class="content">
 
+      <div class="header-logo">
+        <a href="#" title="Agency New">
+          <img src="images/agency_new_logo.png" alt="Agency-Logo">
+        </a>
+      </div>
+
+      <a href="#" id="nav-toggle" >
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+
+      <!-- menu mobile -->
+      <div class="header-collapse">
+        <nav class="header-nav">
+          <h1 class="font-zero">Navegação do Site</h1>
+
+          <ul>
+            <li><a href="#home" title="Home" class="active">HOME</a></li>
+            <li><a href="#agencia" title="Agencia">AGENCIA</a></li>
+            <li><a href="#equipe" title="Equipe">EQUIPE</a></li>
+            <li><a href="#servicos" title="Serviços">SERVIÇOS</a></li>
+            <li><a href="#portifolio" title="Portifolio">PORTIFOLIO</a></li>
+            <li><a href="#blog" title="Blog">BLOG</a></li>
+            <li><a href="#contato" title="Contato">CONTATO</a></li>
+          </ul>
+        </nav>
+        <div class="header-search">
+          <form>
+            <input type="search" name="busca" placeholder="PESQUISAR" id="busca">
+            <button type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+        <div class="header-redes">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </header>
+  <!-- end HEADER -->
+<script src="js/jquery.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/owl.carousel.min.js"></script>
 </body>
 
 </html>
