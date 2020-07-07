@@ -1,0 +1,103 @@
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+/* ---------------------------------- GENERAL ----------------------------------- */
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+.header {
+    border: 0px;
+    border-top: 6px;
+    border-style: solid;
+    border-color: #2c3e50;
+}
+
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+/* ----------------------------------- LOGO ------------------------------------- */
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+.header-logo {
+    width: 170px;
+    padding: 22px 0;
+    float: left;
+}
+
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+/* ----------------------------------- MENU ------------------------------------- */
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+.header-nav {
+    float: left;
+    padding: 25px;
+}
+.header-nav ul li {
+    display: inline-block;
+    margin: 0 2px;
+    position: relative;
+}
+.header-nav ul li a {
+    color: #2c3e50;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+.header-nav ul li a:hover {
+    color: #f47933;
+}
+.header-nav ul li a.active {
+    color: #f47933;
+}
+
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+/* ---------------------------------- SEARCH ------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+.header-search {
+    position: relative;
+    float: right;
+    margin: 18px 0;
+}
+
+/*========== mudar estilo do placeholder do input pesquisar ===================== */
+.header-search input::-webkit-input-placeholder { /*chrome, opera, safari*/
+    color: #ffffff;
+}
+.header-search input:-moz-placeholder { /*firefox do 4 ao 18*/
+    color: #ffffff;
+    opacity: 1;
+}
+.header-search input::-moz-placeholder { /*firefox 19+*/
+    color: #ffffff;
+    opacity: 1;
+}
+.header-search input:-ms-input-placeholder { /* ie 10+*/
+    color: #ffffff;
+}
+.header-search input::-ms-input-placeholder { /*Edge*/
+    color: #ffffff;
+}
+.header-search input::placeholder { /*browsers modernos*/
+    color: #ffffff;
+}
+/*========= mudar estilo do placeholder do input pesquisar ===================== */
+
+.header-search input {
+    width: 100%;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #01c0b5;
+    padding: 10px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+}
+.header-search button {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    color: #ffffff;
+    background-color: transparent;
+    font-size: 1.5rem;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
