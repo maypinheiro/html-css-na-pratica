@@ -2,6 +2,7 @@
     .header-nav {
         margin-left: 2%;
     }
+
     .header-nav ul li a.active::before {
         background-color: #f47933;
         content: "";
@@ -10,6 +11,11 @@
         width: 100%;
         top: -31px;
         left: 0;
+    }
+
+    /* ----------------------- CAROUSEL ------------------------ */
+    #carousel-principal {
+        height: calc(100% - 80px);
     }
 }
 
@@ -20,9 +26,10 @@
 }
 
 @media (min-width: 1144px) {
-    .header-logo{
+    .header-logo {
         width: auto;
     }
+
     .header-nav ul li a {
         font-size: 0.95rem;
     }
@@ -32,7 +39,8 @@
     .header-nav ul li {
         margin: 0 10px;
     }
-    .header-search{
+
+    .header-search {
         width: 240px;
     }
 }
@@ -41,10 +49,12 @@
     .header-nav ul li {
         margin: 0 10px;
     }
+
     .header-nav ul li a {
         font-size: 1.1rem;
     }
-    .header-search{
+
+    .header-search {
         width: 280px;
     }
 }
