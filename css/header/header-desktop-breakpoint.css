@@ -1,0 +1,50 @@
+@media (min-width: 960px) {
+    .header-nav {
+        margin-left: 2%;
+    }
+    .header-nav ul li a.active::before {
+        background-color: #f47933;
+        content: "";
+        position: absolute;
+        height: 6px;
+        width: 100%;
+        top: -31px;
+        left: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header-nav ul li {
+        margin: 0 6px;
+    }
+}
+
+@media (min-width: 1144px) {
+    .header-logo{
+        width: auto;
+    }
+    .header-nav ul li a {
+        font-size: 0.95rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .header-nav ul li {
+        margin: 0 10px;
+    }
+    .header-search{
+        width: 240px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .header-nav ul li {
+        margin: 0 10px;
+    }
+    .header-nav ul li a {
+        font-size: 1.1rem;
+    }
+    .header-search{
+        width: 280px;
+    }
+}
