@@ -1,3 +1,15 @@
+@media (min-width: 768px) {
+    .agencia-item{
+        float: left;
+        width: calc((100% - 4%) / 2);
+        margin-right: 4%;
+    }
+    .agencia-item:nth-last-of-type(2n+0){
+        margin-right: 0;
+    }
+}
+
+
 @media (min-width: 960px) {
     .header-nav {
         margin-left: 2%;
@@ -16,6 +28,16 @@
     /* ----------------------- CAROUSEL ------------------------ */
     #carousel-principal {
         height: calc(100% - 80px);
+        
+    }
+    /* agencia */
+    .agencia-item{
+        width: calc((100% - 8%) / 3);
+        margin-left: 4%;
+        margin-right: 0;
+    }
+    .agencia-item:nth-last-of-type(3n+0){
+        margin-left: 0;
     }
 }
 
