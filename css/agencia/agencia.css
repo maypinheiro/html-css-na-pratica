@@ -1,0 +1,44 @@
+.agencia{
+    background-color: #f5f5f5;
+    padding: 50px 0;
+}
+.agencia-title{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.375rem;
+}
+.agencia-title strong{
+    color: #01c0b5;
+    font-size: 1.875rem;
+}
+
+.agencia-item{
+    margin-top: 30px;
+    text-align: center;
+
+}
+.agencia-item-icon{
+    background-color: #01c0b5;
+    color: #ffffff;
+    width: 100%;
+    padding: 20px;
+    font-size: 6rem;
+    position: relative;
+}
+.agencia-item-icon::before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    /* faz a seta */
+    border-left: 22px solid transparent;
+    border-right: 22px solid transparent;
+    border-top: 22px solid #01c0b5;
+    margin-left: -22px;
+}
+.agencia-item h2{
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+    margin: 25px 0 5px 0;
+}

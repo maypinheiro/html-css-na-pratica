@@ -10,9 +10,12 @@
 .owl-lazy {
     height: 100%;
     position: relative;
+
 }
 
 .owl-lazy {
+    /* necessario passar um width de 102% para não ficar uma borda entre uma imagem e outra  */
+    width: 102%;
     padding: 0;
     background-repeat: no-repeat;
     background-size: cover;
