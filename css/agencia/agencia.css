@@ -1,23 +1,26 @@
-.agencia{
+.agencia {
     background-color: #f5f5f5;
     padding: 50px 0;
 }
-.agencia-title{
+
+.agencia-title {
     text-transform: uppercase;
     text-align: center;
     font-size: 1.375rem;
 }
-.agencia-title strong{
+
+.agencia-title strong {
     color: #01c0b5;
     font-size: 1.875rem;
 }
 
-.agencia-item{
+.agencia-item {
     margin-top: 30px;
     text-align: center;
 
 }
-.agencia-item-icon{
+
+.agencia-item-icon {
     background-color: #01c0b5;
     color: #ffffff;
     width: 100%;
@@ -25,7 +28,8 @@
     font-size: 6rem;
     position: relative;
 }
-.agencia-item-icon::before{
+
+.agencia-item-icon::before {
     content: "";
     position: absolute;
     top: 100%;
@@ -36,39 +40,188 @@
     border-top: 22px solid #01c0b5;
     margin-left: -22px;
 }
-.agencia-item h2{
+
+.agencia-item h2 {
     font-size: 2rem;
     font-family: 'Oswald', sans-serif;
     font-weight: normal;
     margin: 25px 0 5px 0;
 }
+
 /* curiosidades */
-.curiosidades{
+.curiosidades {
     padding: 50px 0;
     background-image: url(../../images/agencia-curiosidades-bg.jpg);
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
     text-align: center;
-    color: #ffffff;    
+    color: #ffffff;
 }
-.curiosidades p{
+
+.curiosidades p {
     font-size: 1.875rem;
     font-weight: 700;
 }
-.curiosidades ul{
+
+.curiosidades ul {
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
     font-size: 1.25rem;
-    list-style: none;margin-top: 20px;
+    list-style: none;
+    margin-top: 20px;
 }
-.curiosidades ul span{
+
+.curiosidades ul span {
     font-family: 'Oswald', sans-serif;
     font-size: 3.75rem;
     color: #01c0b5;
     display: block;
 }
-.equipe{
+
+.equipe {
     background-color: #f5f5f5;
     padding: 50px 0;
+}
+
+.equipe-list {
+    text-align: center;
+    font-size: 0;
+}
+
+.equipe-list li {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 250px;
+    display: inline-block;
+    border: 1px solid #cccccc;
+    border-top: 0;
+    
+}
+
+.equipe-foto {
+    height: 240px;
+    overflow: hidden;
+    position: relative;
+}
+
+.equipe-foto img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+.equipe-foto-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(45, 63, 81, .85);
+    z-index: 1;
+    /* efeito do bloco equipe parte 1 */
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    transform: scale(.4) rotate(400deg);
+    -webkit-transform: scale(.4) rotate(400deg);
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    opacity: 0;
+
+
+}
+
+.equipe-foto-hover div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.equipe-foto-hover span {
+    color: #ffffff;
+    font-size: 1.125rem;
+    position: relative;
+}
+
+.equipe-foto-hover span::before,
+.equipe-foto-hover span::after {
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    width: 40px;
+    height: 1px;
+    top: 50%;
+}
+
+.equipe-foto-hover span::before {
+    left: -50px;
+}
+
+.equipe-foto-hover span::after {
+    right: -50px;
+}
+
+.equipe-foto-hover a {
+    color: #ffffff;
+    font-size: 0.875rem;
+    background-color: #f47933;
+    padding: 3px 10px;
+    position: relative;
+    top: 5px;
+}
+
+.equipe-foto-hover a:hover {
+    background-color: #ca5818;
+
+}
+
+
+.equipe-title {
+    padding: 10px 0;
+    position: relative;
+    overflow: hidden;
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 200ms ease-in-out;
+
+}
+
+.equipe-title::before {
+    position: absolute;
+    content: "";
+    background-color: #f47933;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 200ms ease-in-out;
+
+}
+
+.equipe-title strong {
+    font-size: 1.125rem;
+    font-weight: 400;
+    position: relative;
+}
+
+/* efeito do bloco equipe parte 2 */
+.equipe-list li:hover .equipe-foto-hover {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    transform: scale(1) rotate(0deg);
+    -webkit-transform: scale(1) rotate(0deg);
+    opacity: 1;
+}
+
+.equipe-list li:hover .equipe-title::before {
+    top: 0;
+}
+
+.equipe-list li:hover .equipe-title {
+    color: #ffffff;
 }
