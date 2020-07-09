@@ -42,3 +42,33 @@
     font-weight: normal;
     margin: 25px 0 5px 0;
 }
+/* curiosidades */
+.curiosidades{
+    padding: 50px 0;
+    background-image: url(../../images/agencia-curiosidades-bg.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    color: #ffffff;    
+}
+.curiosidades p{
+    font-size: 1.875rem;
+    font-weight: 700;
+}
+.curiosidades ul{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    list-style: none;margin-top: 20px;
+}
+.curiosidades ul span{
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.75rem;
+    color: #01c0b5;
+    display: block;
+}
+.equipe{
+    background-color: #f5f5f5;
+    padding: 50px 0;
+}
