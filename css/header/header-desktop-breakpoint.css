@@ -1,11 +1,23 @@
+@media (min-width: 480px) {
+    .curiosidades ul li{
+        float: left;
+        width: 50%;
+    }
+}
+
+
 @media (min-width: 768px) {
-    .agencia-item{
+        .agencia-item{
         float: left;
         width: calc((100% - 4%) / 2);
         margin-right: 4%;
     }
     .agencia-item:nth-last-of-type(2n+0){
         margin-right: 0;
+    }
+
+    .curiosidades ul li{
+        width: 25%;
     }
 }
 
