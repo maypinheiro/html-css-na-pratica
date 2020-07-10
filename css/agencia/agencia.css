@@ -102,7 +102,7 @@
 }
 
 .equipe-foto {
-    height: 240px;
+    height: 350px;
     overflow: hidden;
     position: relative;
 }
@@ -224,4 +224,11 @@
 
 .equipe-list li:hover .equipe-title {
     color: #ffffff;
+}
+.servicos{
+    padding: 50px 0;
+    background-image: url(../../images/servicos-bg.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
 }

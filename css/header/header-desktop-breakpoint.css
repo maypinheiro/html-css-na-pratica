@@ -78,7 +78,7 @@
     .equipe-list li {
         width: 25%;
     }
-    .equipe-list li:nth-of-type(1n+0) {
+    .equipe-list li:not(:first-child){
         border-left: 0;
     }
 
