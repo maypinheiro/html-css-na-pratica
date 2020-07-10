@@ -3,6 +3,17 @@
         float: left;
         width: 50%;
     }
+    .testemunhos-photo {
+        width: 100px;
+        height: 100px;
+
+    
+    }
+    
+    .testemunhos-info {
+        width: calc(100% - 120px);
+    
+    }
 }
 
 
