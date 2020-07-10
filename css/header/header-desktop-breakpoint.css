@@ -14,6 +14,24 @@
     .equipe-list li:nth-of-type(2n+0) {
         border-left: 0;
     }
+
+    /* serviços */
+    .servicos-item:not(:first-child),
+    .servicos-item {
+        width: calc((100% - 4%)/ 2);
+        float: left;
+        margin: 0 4% 0 0;
+
+    }
+
+    .servicos-item:nth-of-type(2n+0) {
+        margin-right: 0;
+    }
+
+    .servicos-item:nth-of-type(1n+3) {
+        margin-top: 4%;
+    }
+
 }
 
 @media (min-width: 768px) {
@@ -30,6 +48,9 @@
     .curiosidades ul li {
         width: 25%;
     }
+}
+@media (min-width: 833px) {
+
 }
 
 
@@ -64,21 +85,22 @@
     .agencia-item:nth-last-of-type(3n+0) {
         margin-left: 0;
     }
+
     /* -------------------------------------------------------- */
-    .equipe-list li {
-        width: 25%;
-    }
+
 }
 
 @media (min-width: 1024px) {
     .header-nav ul li {
         margin: 0 6px;
     }
+
     .equipe-list li:nth-of-type(2n+0),
     .equipe-list li {
         width: 25%;
     }
-    .equipe-list li:not(:first-child){
+
+    .equipe-list li:not(:first-child) {
         border-left: 0;
     }
 
@@ -102,6 +124,19 @@
     .header-search {
         width: 240px;
     }
+
+    /* serviços */
+    .servicos-item:not(:first-child),
+    .servicos-item {
+        width: calc((100% - 12%)/ 4);
+        float: left;
+        margin: 0 4% 0 0;
+
+    }
+    .servicos-item:nth-of-type(4n+0) {
+        margin-right: 0;
+    }
+
 }
 
 @media (min-width: 1500px) {
