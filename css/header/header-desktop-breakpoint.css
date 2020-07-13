@@ -24,6 +24,11 @@
     .clientes ul li:nth-of-type(2n+0) {
         margin-right: 0;
     }
+
+    /* contato */
+    .contato-infos span {
+        width: 80%;
+    }
 }
 
 
@@ -97,7 +102,47 @@
         margin-right: 0;
     }
 
+    /* contato */
+    .contato-infos {
+        font-size: 2.5rem;
+    }
 
+    .contato-infos span {
+        width: 500px;
+        font-size: 3.5rem;
+    }
+
+    .contato-form form div {
+        float: left;
+        width: 48%;
+    }
+
+    .contato-form form div:last-child {
+        float: right;
+
+    }
+
+    /* footer */
+    .footer-col {
+        margin: 0;
+        width: calc(100% / 3);
+        float: left;
+    }
+
+    .footer-col:first-child {
+        text-align: left;
+    }
+
+    .footer-col:last-child {
+        text-align: right;
+        padding-top: 5px;
+    }
+    .footer-redes a {  
+        margin: 0;
+    }
+    .footer-redes a:not(:first-child){  
+        margin-left: 20px;
+    }
 }
 
 @media (min-width: 833px) {}
