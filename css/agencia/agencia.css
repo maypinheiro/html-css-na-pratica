@@ -398,3 +398,121 @@
     top: 10px;
     position: relative;
 }
+
+/* portifolio */
+.portifolio-nav {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.portifolio-nav li {
+    display: inline-block;
+    margin: 0 5px 10px 5px;
+}
+
+.portifolio-nav li a {
+    display: block;
+    padding: 2px 10px;
+    border: 2px solid #2c3e50;
+    color: #2c3e50;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+}
+
+.portifolio-nav li a:hover {
+    color: #f47933;
+    border-color: #f47933;
+}
+
+.portifolio-nav li a.active {
+    color: #f47933;
+    border-color: #f47933;
+}
+
+.portifolio {
+    float: left;
+    width: 100%;
+    position: relative;
+    display: none;
+}
+
+.portifolio.visible {
+    display: block;
+    animation: animaPortifolio .7s ease;
+    -webkit-animation: animaPortifolio .7s ease;
+}
+
+@keyframes animaPortifolio {
+    0% {
+        transform: scale(.5);
+        -webkit-transform: scale(.5);
+    }
+
+    100% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+
+    }
+}
+
+.portifolio img {
+    display: block;
+}
+
+.portifolio-hover {
+    z-index: 1;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(45, 63, 81, .85);
+    color: #ffffff;
+    text-align: center;
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.portifolio-hover>div {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.portifolio-hover strong {
+    font-family: 'Oswald'sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.portifolio-hover label {
+    width: 100%;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.portifolio-hover a {
+    font-size: 4rem;
+    color: #ffffff;
+    line-height: 1;
+}
+
+.portifolio-hover a:hover {
+    color: #f47933;
+}
+
+.portifolio-hover i {
+    line-height: 1;
+}
+
+.portifolio:hover .portifolio-hover {
+    opacity: 1;
+}

@@ -21,7 +21,7 @@ $(document).ready(function () {
         autoplaySpeed: 1000,
         responsiveRefreshRate: 10
     });
-    //carrousel principal
+    //carrousel testemunhos
     $('#carousel-testemunhos').owlCarousel({
         items:2,
         loop:true,
@@ -44,6 +44,22 @@ $(document).ready(function () {
             1280:{
                 nav: true
             }
+        }
+    });
+    
+    // jobs portifolio
+    $('.portifolio-nav li a').click(function(e){
+        e.preventDefault();
+        $('.portifolio-nav li a').removeClass('active');
+        $(this).addClass('active');
+
+        $('.portifolio').removeClass('visible');
+
+        if(this.id == "all"){
+            $('.portifolio').addClass('visible');
+        } 
+        else {
+            $('.portifolio.' + this.id).addClass('visible');
         }
     });
 })
