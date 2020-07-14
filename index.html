@@ -12,8 +12,10 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta name="description" content="Aprenda na prática a desenvolver um template moderno com propriedades avançadas do HTML5 e CSS3." />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="description"
+    content="Aprenda na prática a desenvolver um template moderno com propriedades avançadas do HTML5 e CSS3." />
   <title>Agency New - HTML e CSS Pro</title>
   <!-- FONT GOOGLE -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -38,7 +40,98 @@
 </head>
 
 <body>
+  <!-- start MODAL -->
+  <div class="dialog">
+    <button class="dialog-close">
+      FECHAR
+      <i class="fas fa-times-circle"></i>
+    </button>
+    <div class="dialog-body">
+      <div class="row dialog-body-header">
+        <p><strong>Luiz Vieira</strong></p>
+        <p><span>Front-End</span></p>
+      </div>
 
+
+      <div class="row">
+
+        <div class="dialog-cols">
+          <div class="dialog-equipe-photo">
+            <img src="images/equipe/luiz-vieira.jpg" alt="">
+          </div>
+          <div class="dialog-equipe-redes">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+          </div>
+        </div>
+
+        <div class="dialog-cols">
+          <div class="row">
+            <p class="dialog-cols-header"><span>Bografia</span></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eaque totam excepturi, magni eos fugit,
+              ducimus placeat ad laudantium eius distinctio! Ab, saepe eligendi ut a eveniet quaerat quia asperiores?
+            </p>
+          </div>
+          <div class="row">
+            <p class="dialog-cols-header"><span>Formação</span></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eaque totam excepturi, magni eos fugit,
+              ducimus placeat ad laudantium eius distinctio! Ab, saepe eligendi ut a eveniet quaerat quia asperiores?
+            </p>
+          </div>
+          <div class="row">
+            <p class="dialog-cols-header"><span>Esperiencias</span></p>
+            <p>
+              <strong>10-2017 - Atual</strong><br>
+              Nome da Empresa: 3 <br>
+              Programador Full-Stack / Design UI
+            </p>
+            <p>
+              <strong>10-2015 - 10-2017 </strong><br>
+              Nome da Empresa: 2 <br>
+              Programador Full-Stack
+            </p>
+            <p>
+              <strong>10-2011 - 10-2015 </strong><br>
+              Nome da Empresa: 1 <br>
+              Programador Back-End
+            </p>
+          </div>
+          <div class="row">
+            <p class="dialog-cols-header"><span>Habilidades</span></p>
+            <ul>
+              <li>
+                <label>HTML5 <span>80%</span></label>
+                <div><span style="width: 80%;"></span></div>
+              </li>
+              <li>
+                <label>CSS3 <span>60%</span></label>
+                <div><span style="width: 60%;"></span></div>
+              </li>
+              <li>
+                <label>JavaScript <span>40%</span></label>
+                <div><span style="width: 40%;"></span></div>
+              </li>
+              <li>
+                <label>Angular <span>30%</span></label>
+                <div><span style="width: 30%;"></span></div>
+              </li>
+              <li>
+                <label>C# <span>90%</span></label>
+                <div><span style="width: 90%;"></span></div>
+              </li>
+              <li>
+                <label>.NET Core <span>70%</span></label>
+                <div><span style="width: 70%;"></span></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end MODAL -->
 
   <!-- start HEADER -->
   <header class="row header">
@@ -47,7 +140,7 @@
     <div class="content">
 
       <div class="header-logo">
-        <a href="#" title="Agency New">
+        <a href="#" title="Agency New" class="back-top">
           <img src="images/agency_new_logo.png" alt="Agency-Logo">
         </a>
       </div>
@@ -178,7 +271,6 @@
       </div>
     </div>
   </section>
-
   <!-- end AGENCIA -->
 
   <!-- start CURIOSIDADES -->
@@ -219,7 +311,6 @@
       </div>
     </header>
   </section>
-
   <div class="row equipe">
     <div class="content">
       <ul class="equipe-list">
@@ -293,6 +384,7 @@
     </div>
   </div>
   <!-- end equipe -->
+
   <!-- start SERVIÇOS -->
   <section class="section" id="servicos">
     <header class="section-header">
@@ -383,6 +475,7 @@
     </div>
   </section>
   <!-- end SERVIÇOS -->
+
   <!-- start testemunha -->
   <section class="section">
     <header class="section-header">
@@ -488,6 +581,7 @@
     </div>
   </section>
   <!-- end testemunha -->
+
   <!-- start PORTIFOLIO -->
   <section class="section" id="portifolio">
     <header class="section-header">
@@ -643,6 +737,7 @@
     </div>
   </section>
   <!-- end PORTIFOLIO -->
+
   <!-- start clientes  -->
   <div class="row clientes">
     <div class="content">
@@ -658,6 +753,7 @@
     </div>
   </div>
   <!-- end clientes  -->
+
   <!-- start blog -->
   <section class="section" id="blog">
     <header class="section-header">
@@ -729,6 +825,7 @@
     </div>
   </section>
   <!-- end blog -->
+
   <!-- start contato -->
   <section class="section" id="contato">
     <header class="section-header">
@@ -782,6 +879,7 @@
     </div>
   </section>
   <!-- end contato -->
+
   <!-- start footer -->
   <footer class="row footer">
     <div class="content">
