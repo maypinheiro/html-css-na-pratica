@@ -1,5 +1,6 @@
 /*RESET
 -----------------------------------------*/
+
 *,
 *::before,
 *::after {
@@ -44,7 +45,9 @@ textarea {
     border: 0;
 }
 
+
 /* gerais ============================*/
+
 .row,
 .section {
     float: left;
@@ -111,7 +114,9 @@ textarea {
     margin-left: -12px;
 }
 
+
 /* modal */
+
 .dialog {
     position: fixed;
     background-color: rgba(255, 255, 255, .9);
@@ -119,8 +124,8 @@ textarea {
     height: 100%;
     left: 0;
     top: 0;
-    z-index: 99;
     padding: 60px 0 20px 0;
+    opacity: 0;
 }
 
 .dialog-close {
@@ -166,7 +171,6 @@ textarea {
 .dialog-body-header strong {
     font-size: 2rem;
     font-weight: 400;
-
 }
 
 .dialog-body-header span {
@@ -174,6 +178,7 @@ textarea {
     font-weight: 400;
     color: #01c0b5;
 }
-.dialog-cols .row{
+
+.dialog-cols .row {
     margin-bottom: 20px;
 }
