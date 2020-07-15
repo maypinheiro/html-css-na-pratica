@@ -1,4 +1,19 @@
 $(document).ready(function () {
+    // dialog 
+    $('.dialog-close').click(function () {
+        $('.dialog-body').fadeOut('200', function () {
+            $('.dialog').fadeOut('200');
+        });
+    });
+    // dialog 
+    $('.dialog-open').click(function (e) {
+        e.preventDefault();
+        var target = $(this).attr('href');
+        $('.dialog').fadeIn('200', function () {
+            $(target).fadeIn('200');
+        });
+    });
+
     $('#nav-toggle').click(function (e) {
         e.preventDefault();
         //toggle verifica se a classe existe, se existe ela retira se nao adc.
@@ -36,24 +51,27 @@ $(document).ready(function () {
     });
 
     // navegação
-    nav.find('a').on('click', function(e){
+    nav.find('a').on('click', function (e) {
         e.preventDefault();
         $('.header-collapse').removeClass('active');
         $('#nav-toggle').removeClass('active');
         var target = $(this).attr('href');
-        if(target == "#home"){
-            $('html, body').animate({scrollTop: 0}, 700);
-        } 
-        else {
+        if (target == "#home") {
+            $('html, body').animate({
+                scrollTop: 0
+            }, 700);
+        } else {
             $('html, body').stop().animate({
                 scrollTop: $(target).offset().top
             }, 700);
         }
     });
     //back-top
-    $('.back-top').on('click', function(e){
+    $('.back-top').on('click', function (e) {
         e.preventDefault();
-        $('html, body').animate({scrollTop: 0}, 700);
+        $('html, body').animate({
+            scrollTop: 0
+        }, 700);
     });
 
     //carrousel principal
@@ -95,6 +113,22 @@ $(document).ready(function () {
                 nav: true
             }
         }
+    });
+
+    //carousel-portifolio
+    $('.carousel-portifolio').owlCarousel({
+        items: 1,
+        lazyLoad: true,
+        loop: true,
+        margin: 10,
+        nav: true,
+        navSpeed: 1000,
+        navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
+        dots: false,
+        dotsSpeed: 1000,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        responsiveRefreshRate: 10
     });
 
     // jobs portifolio

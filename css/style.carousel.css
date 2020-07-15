@@ -112,3 +112,43 @@ border-radius: 50%;
     position: relative;
     top: 20px;
 }
+
+/* carrousel portifolio */
+.carousel-portifolio{
+    height: 55vh;
+    max-height: 400px;
+    min-width: 300px;
+    margin-bottom: 30px;
+}
+.carousel-portifolio .owl-prev,
+.carousel-portifolio .owl-next {
+text-align: center;
+padding: 0;
+width: 35px;
+height: 35px;
+line-height: 35px;
+/* tira o estilo */
+top: auto;
+bottom: 0;
+/* tira o estilo do transform */
+transform: none;
+left: 0;
+border-right: 3px solid #ffffff;
+border-radius: 0;
+}
+
+.carousel-portifolio .owl-next {
+left: 35px;
+}
+.carousel-portifolio .owl-caption{
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    font-size: 0.8125rem;
+    color: #ffffff;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 10px;
+    bottom: 0;
+    width: calc(100% - 70px);
+    left: 70px;
+}

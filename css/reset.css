@@ -113,6 +113,7 @@ textarea {
 
 /* modal */
 .dialog {
+    display: none;
     position: fixed;
     background-color: rgba(255, 255, 255, .9);
     width: 100%;
@@ -142,9 +143,10 @@ textarea {
 }
 
 .dialog-body {
+    display: none;
     overflow-y: auto;
     width: 90%;
-    max-width: 750px;
+    max-width: 870px;
     max-height: 100%;
     position: relative;
     left: 50%;
@@ -154,6 +156,7 @@ textarea {
 }
 
 .dialog-body-header {
+
     font-family: 'Oswald', sans-serif;
     text-align: center;
     padding: 20px 0 10px 0;
@@ -177,3 +180,35 @@ textarea {
 .dialog-cols .row{
     margin-bottom: 20px;
 }
+.dialog-cols .row p{
+    margin-bottom: 10px;
+}
+
+.dialog-cols-header{
+    margin-bottom: 10px;
+    border-bottom: 2px solid #01c0b5;
+    padding-bottom: 5px;
+}
+.dialog-cols-header span{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    color: #01c0b5;
+    position: relative;
+}
+.dialog-cols-ul li{
+    list-style: none;
+}
+/* .dialog-cols-header span::after{
+    content: "";
+    left: 0;
+    bottom: -5px;
+    height: 2px;
+    background-color: #01c0b5;
+    position: absolute;
+    width: 100%;
+} */
+
+
+
