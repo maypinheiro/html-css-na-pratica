@@ -77,6 +77,23 @@
 }
 
 @media (min-width: 768px) {
+
+    /* modal */
+    .dialog-body{
+        padding: 0 20px;
+    }
+    .dialog-equipe .dialog-cols {
+        float: left;
+        width: 40%;
+    }
+    .dialog-equipe .dialog-cols:last-child {
+        float: right;
+        width: 56%;
+    }
+    .dialog-equipe-photo {
+        height: 350px;
+    }
+
     .agencia-item {
         float: left;
         width: calc((100% - 4%) / 2);
@@ -137,33 +154,39 @@
         text-align: right;
         padding-top: 5px;
     }
-    .footer-redes a {  
+
+    .footer-redes a {
         margin: 0;
     }
-    .footer-redes a:not(:first-child){  
+
+    .footer-redes a:not(:first-child) {
         margin-left: 20px;
     }
+
 }
 
 @media (min-width: 833px) {}
 
 
 @media (min-width: 960px) {
+
     /* animação header */
     @keyframes animaHeader {
-        0%{
+        0% {
             opacity: 0;
             transform: translateY(-100%);
             -webkit-transform: translateY(-100%);
         }
-        100%{
+
+        100% {
             opacity: 1;
             transform: translateY(0%);
             -webkit-transform: translateY(0%);
         }
     }
+
     /* fixa navbar */
-    .fixed{
+    .fixed {
         position: fixed;
         background-color: #ffffff;
         z-index: 20;
