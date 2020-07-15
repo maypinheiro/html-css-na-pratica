@@ -144,10 +144,9 @@ textarea {
 
 .dialog-body {
     display: none;
-
     overflow-y: auto;
     width: 90%;
-    max-width: 750px;
+    max-width: 870px;
     max-height: 100%;
     position: relative;
     left: 50%;
@@ -184,6 +183,7 @@ textarea {
 .dialog-cols .row p{
     margin-bottom: 10px;
 }
+
 .dialog-cols-header{
     margin-bottom: 10px;
     border-bottom: 2px solid #01c0b5;
@@ -196,6 +196,9 @@ textarea {
     font-size: 1.25rem;
     color: #01c0b5;
     position: relative;
+}
+.dialog-cols-ul li{
+    list-style: none;
 }
 /* .dialog-cols-header span::after{
     content: "";

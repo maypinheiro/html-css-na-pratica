@@ -115,6 +115,22 @@ $(document).ready(function () {
         }
     });
 
+    //carousel-portifolio
+    $('.carousel-portifolio').owlCarousel({
+        items: 1,
+        lazyLoad: true,
+        loop: true,
+        margin: 10,
+        nav: true,
+        navSpeed: 1000,
+        navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
+        dots: false,
+        dotsSpeed: 1000,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        responsiveRefreshRate: 10
+    });
+
     // jobs portifolio
     $('.portifolio-nav li a').click(function (e) {
         e.preventDefault();

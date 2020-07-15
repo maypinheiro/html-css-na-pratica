@@ -170,6 +170,15 @@
 
 @media (min-width: 960px) {
 
+    .dialog-portifolio .dialog-cols {
+        float: left;
+        width: 68%;
+    }
+    .dialog-portifolio .dialog-cols:last-child {
+        float: right;
+        width: 30%;
+    }
+
     /* animação header */
     @keyframes animaHeader {
         0% {
